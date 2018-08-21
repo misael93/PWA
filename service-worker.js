@@ -56,7 +56,7 @@ self.addEventListener('activate', function (e) {
 
 self.addEventListener('fetch', function (e) {
   console.log('[Service Worker] Fetch', e.request.url);
-  var dataUrl = 'http://api.football-data.org/v2/competitions/2021/matches';
+  var dataUrl = 'https://api.football-data.org/v2/competitions/2021/matches';
   if (e.request.url.indexOf(dataUrl) > -1) {
     e.respondWith(
       caches.open(dataCacheName).then(function (cache) {
