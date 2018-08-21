@@ -18,7 +18,7 @@
     Fetch them from the cache or the API*/
     app.loadMatches = matchday => {
 
-        var url = 'http://api.football-data.org/v2/competitions/2021/matches?matchday=' + matchday;
+        var url = 'https://api.football-data.org/v2/competitions/2021/matches?matchday=' + matchday;
 
         // Check if the matches are cached
         if ('caches' in window) {
