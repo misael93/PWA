@@ -78,11 +78,11 @@
                 matchTemplate.querySelector('.date').innerHTML = new Date(match.utcDate).toLocaleString('en-US', { timeZone: 'UTC' });
                 matchTemplate.querySelector('.status').innerHTML = match.status;
                 let srcHomeTeam = app.getTeamNameForImage(match.homeTeam.name);
-                matchTemplate.querySelector('.imgHomeTeam').src = `../images/${srcHomeTeam}.svg`;
+                matchTemplate.querySelector('.imgHomeTeam').src = `images/${srcHomeTeam}.svg`;
                 matchTemplate.querySelector('.nameHomeTeam').innerHTML = app.getFixedTeamName(match.homeTeam.name);
                 matchTemplate.querySelector('.scoreHomeTeam').innerHTML = match.score.fullTime.homeTeam;
                 let srcAwayTeam = app.getTeamNameForImage(match.awayTeam.name);
-                matchTemplate.querySelector('.imgAwayTeam').src = `../images/${srcAwayTeam}.svg`;
+                matchTemplate.querySelector('.imgAwayTeam').src = `images/${srcAwayTeam}.svg`;
                 matchTemplate.querySelector('.nameAwayTeam').innerHTML = app.getFixedTeamName(match.awayTeam.name);
                 matchTemplate.querySelector('.scoreAwayTeam').innerHTML = match.score.fullTime.awayTeam;
                 app.matchesContainer.appendChild(matchTemplate);
